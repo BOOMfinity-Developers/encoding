@@ -1368,9 +1368,9 @@ func (d decoder) decodeRawMessage(b []byte, p unsafe.Pointer) ([]byte, error) {
 		return inputError(b, rawMessageType)
 	}
 
-	if (d.flags & DontCopyRawMessage) == 0 {
+	/*if (d.flags & DontCopyRawMessage) == 0 {
 		v = append(make([]byte, 0, len(v)), v...)
-	}
+	}*/
 
 	*(*RawMessage)(p) = json.RawMessage(v)
 	return r, err
