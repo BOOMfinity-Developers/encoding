@@ -1,4 +1,4 @@
-module github.com/segmentio/encoding/benchmarks
+module github.com/BOOMfinity-Developers/encoding/benchmarks
 
 go 1.13
 
